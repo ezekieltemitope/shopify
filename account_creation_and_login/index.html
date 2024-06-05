@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body class="bg-slate-100 font-sans">
+
+    <header class="header">
+        <a href="#" class="logo">RAYES<span >Food</span></a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" height="29" viewBox="0 -960 960 960" width="29"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" height="29" viewBox="0 -960 960 960" width="21"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </label>
+
+        <nav class="navbar">
+            <a href="#" style="--i:0;">HOME</a>
+            <a href="#" style="--i:1;">ABOUT</a>
+            <a href="#" style="--i:2;">SERVICES</a>
+            <a href="#" style="--i:3;">CONTACT</a>
+        </nav>
+    </header>
+
+
+
+    <div class="flex justify-center h-[100vh] items-center">
+        <form id="my-form" class="bg-gray-200 shadow-xl rounded-lg w-[400px] h-[500px] hover:shadow-md transition ease duration-500"  onsubmit="Validate(event)">
+            <div class="flex justify-center mt-7">
+                <div class="text-center">
+                    <h1>RAYES<span >Food</span></h1>
+                    <h1 class="text-primary font-bold mt-5 text-3xl uppercase">Login</h1>
+                </div>
+            </div>
+
+            <div class="m-7">
+                <div class="">
+                    Email<input id="inputText" class="block w-[100%] p-1 rounded-md focus:outline-primary" type="text" placeholder="Email here..." required>
+                </div>
+                <div class="text-red-500" id="message"></div>
+                <div class="mt-3">
+                    Password<input id="inputText" class="block w-[100%] p-1 rounded-md focus:outline-primary" type="password" placeholder="Password here..." required>
+                </div>
+            </div>
+
+            <div class="text-center">
+
+                <input type="submit" name="submit" value="Login" class="bg-primary text-white px-32 py-2 rounded-xl mt-5 font-semibold cursor-pointer hover:bg-white border border-primary hover:text-gray-400 transition ease duration-500 uppercase font-serif">
+                <a href="#" class="block mt-5 underline text-primary font-semibold">Forgot your Password?</a>
+            </div>
+    
+            <p class="text-center mt-5">
+                For further support you may visit the <span><a class="text-primary" href="#">help centre</a></span> or contact our <span><a class="text-primary" href="#">customer service</a></span>
+            </p>
+    
+
+        </form>
+
+    </div>
+
+
+    <script src="form.js"></script>
+    
+</body>
+</html>
+
+<!-- npx tailwindcss -i ./styles/style.css -o ./styles/output.css --watch -->
